@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média social</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+
+    <!------------NAV------------>
+    
+    <nav class="nav">
+        <div class="container">
+            <h2 class="log">Post it</h2>
+            <div class="search-bar">
+                <img src="./icons/search.svg" alt="chercher" class="icons">
+                <input type="search" name="search" id="search" placeholder="Chercher un créateur, une inspiration ou un projet">
+            </div>
+            
+            <div class="create">
+                <label for="create-post" class="btn btn-primary">créer</label>
+                <div class="theme">
+                    <img src="./icons/sun.svg" class="icons">
+                    <div class="input">
+                        <div class="bull"></div>
+                    </div>
+                    <img src="./icons/moon.svg" class="icons">
+                </div>
+                <div class="profile-picture">
+                    <img src="./img/profil-person1-small.jpg" alt="photo de profil">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!------------MAIN------------>
+    
+    <main>
+        <div class="container">
+            <!------------LEFT------------>
+            <div class="left">
+                <a href="" class="profil">
+                    <div class="profile-picture">
+                        <img src="./img/profil-person1-small.jpg" alt="photo de profil">
+                    </div>
+                    <div class="handle">
+                        <h4>Ben Uzan</h4>
+                        <p class="text-muted">
+                            @buzan
+                        </p>
+                    </div>
+                </a>
+                <div class="sidebar">
+                    
+                    <a class="menu-items active">
+                        <img src="./icons/home.svg" alt="Accueil" class="icons">
+                        <h3>Accueil</h3>
+                    </a>
+                    
+                    <a class="menu-items">
+                        <img src="./icons/explore.svg" alt="explorer" class="icons">
+                        <h3>Explorer</h3>
+                    </a>
+                    
+                    <a id="notifications" class="menu-items notifications">
+                        <img src="./icons/bell.svg" alt="Notifications" class="icons">
+                        <small class="notification-count">9+</small>
+                        <h3>Notifications</h3>
+
+                        <!------------NOTIFICATIONS POPUP------------>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-medium.jpg" alt="photo de profil">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Théo Balick</b> a commenté une photo que vous aimé
+                                    <small class="text-muted">il y a 23min</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-medium.jpg" alt="photo de profil">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Paul Kamena</b> a accepté votre invitation
+                                    <small class="text-muted">il y a 1h</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-medium.jpg" alt="photo de profil">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bavon Kalolo</b> a aimé votre photo
+                                    <small class="text-muted">il y a 1h</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-medium.jpg" alt="photo de profil">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nycla Kassaka</b> a commenté votre photo
+                                    <small class="text-muted">il y a 3h</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-medium.jpg" alt="photo de profil">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ferdinand Kahenga a commenté votre photo</b>
+                                    <small class="text-muted">il y a 5h</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!------------END NOTIFICATIONS POPUP------------>
+                    
+                    <a class="menu-items" id="messages-notification">
+                        <img src="./icons/message.svg" alt="Messages" class="icons">
+                        <small class="notification-count">6</small>
+                        <h3>Messages</h3>
+                    </a>
+                    
+                    <a class="menu-items">
+                        <img src="./icons/agenda.svg" alt="Evènements" class="icons">
+                        <h3>Agenda</h3>
+                    </a>
+                    
+                    <a class="menu-items">
+                        <img src="./icons/settings.svg " alt="Accueil" class="icons">
+                        <h3>Paramètres</h3>
+                    </a>
+                </div>
+                <!------------END OF SIDEBAR------------>
+                <label for="create-post" class="btn btn-primary">Créer un post</label>
+            </div>
+            <!--END OF LEFT-->
+
+            <!------------MIDDLE------------>
+            <div class="middle">
+
+                <!------------STORIES------------>
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./img/profil-person2-large.jpg" alt="photo de profil">
+                        </div>
+                        <p class="name">Ma story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                        </div>
+                        <p class="name">Eddysha Jabulani</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./img/profile-photo3-large.jpg" alt="photo de profil">
+                        </div>
+                        <p class="name">Georges Methens</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./img/profil-person2-large.jpg" alt="photo de profil">
+                        </div>
+                        <p class="name">John Shacko</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./img/profil-person2-large.jpg" alt="photo de profil">
+                        </div>
+                        <p class="name">Théo Balick</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./img/profil-person2-large.jpg" alt="photo de profil">
+                        </div>
+                        <p class="name">Michael Mbambi</p>
+                    </div>
+                </div>
+                <!------------END OF STORIES------------>
+                <div class="create-post">
+                    <div class="profile-picture">
+                        <img src="./img/profile-photo3-large.jpg" alt="photo de profile">
+                    </div>
+                    <input type="text" placeholder="Qu'est-ce qui te préocupe, Ben" id="create-post">
+                    <input type="submit" value="Poster" class="btn btn-primary">
+                </div>
+            
+                <!------------FEEDS------------>
+                <div class="feeds">
+                    <!------------FEED------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Jérémie Matabaro</h3>
+                                    <small>Lubumbashi, il y a 20min</small>
+                                </div>
+                            </div>
+                            <span class="edit"><img src="./icons/more.svg" alt="edit" class="icons"></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./img/post1.jpg" alt="photo postée">
+                        </div>
+            
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><img src="./icons/hearth.svg" alt="j'aime" class="icons"></span>
+                                <small class="like">69</small>
+                                <span><img src="./icons/comment.svg" alt="commenter" class="icons"></span>
+                                <small class="comment">552</small>
+                                <span><img src="./icons/share.svg" alt="partage" class="icons"></span>
+                                <small class="shared">1</small>
+                            </div>
+                            <div class="bookmark">
+                                <span><img src="./icons/favorie.svg" alt="favorie" class="icons"></span>
+                            </div>
+                        </div>
+            
+                        <div class="liked-by">
+                            <span><img src="./img/profile-photo2-medium.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profil-person2-large.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profile-photo3-large.jpg" alt="j'ame" class="icons"></span>
+                            <p>Aimé par <b>Joseph Numbi</b>, <b>Bérénice</b>, <b>Nicolas</b> et 66 autres personnes</p>
+                        </div>
+            
+                        <div class="caption">
+                            <b>Bavon Kalolo </b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, alias illum enim aliquam similique 
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+            
+                        <div class="text-muted comments">
+                            Voir Tout les 552 commentaires
+                        </div>
+                    </div>
+            
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Bavon Kalolo</h3>
+                                    <small>Lubumbashi, il y a 20min</small>
+                                </div>
+                            </div>
+                            <span class="edit"><img src="./icons/more.svg" alt="edit" class="icons"></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./img/story5.jpg" alt="photo postée">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><img src="./icons/hearthred.svg" alt="j'aime" class="icons"></span>
+                                <small class="like">369</small>
+                                <span><img src="./icons/comment2.svg" alt="commenter" class="icons"></span>
+                                <small class="comment">402</small>
+                                <span><img src="./icons/share.svg" alt="partage" class="icons"></span>
+                                <small class="shared">5</small>
+                            </div>
+                            <div class="bookmark">
+                                <span><img src="./icons/favorie.svg" alt="favorie" class="icons"></span>
+                            </div>
+                        </div>
+            
+                        <div class="liked-by">
+                            <span><img src="./img/profile-photo2-medium.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profil-person2-large.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profile-photo3-large.jpg" alt="j'ame" class="icons"></span>
+                            <p>Aimé par <b>Georges</b>, <b>Bavon</b>, <b>Ruth</b> et 366 autres personnes</p>
+                        </div>
+            
+                        <div class="caption">
+                            <b>Bavon Kalolo </b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, alias illum enim aliquam similique asperiores consequuntur assumenda sequi omnis labore voluptates cum ab, perferendis nihil fugiat repellendus amet culpa corrupti!
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+            
+                        <div class="text-muted comments">
+                            Voir Tout les 402 commentaires
+                        </div>
+                    </div>
+            
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Merveille Tshibanda</h3>
+                                    <small>Lubumbashi, il y a 21min</small>
+                                </div>
+                            </div>
+                            <span class="edit"><img src="./icons/more.svg" alt="edit" class="icons"></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./img/post2.jpg" alt="photo postée">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><img src="./icons/hearth.svg" alt="j'aime" class="icons"></span>
+                                <small class="like">898</small>
+                                <span><img src="./icons/comment2.svg" alt="commenter" class="icons"></span>
+                                <small class="comment">36</small>
+                                <span><img src="./icons/share.svg" alt="partage" class="icons"></span>
+                                <small class="shared"></small>
+                            </div>
+                            <div class="bookmark">
+                                <span><img src="./icons/favorie.svg" alt="favorie" class="icons"></span>
+                            </div>
+                        </div>
+            
+                        <div class="liked-by">
+                            <span><img src="./img/profile-photo2-medium.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profil-person2-large.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profile-photo3-large.jpg" alt="j'ame" class="icons"></span>
+                            <p>Aimé par <b>Cevick</b>, <b>Keith</b>, <b>Jeancy</b> et 895 autres personnes</p>
+                        </div>
+            
+                        <div class="caption">
+                            <b>Théo Balick </b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, alias illum enim aliquam similique asperiores consequuntur assumenda sequi omnis labore voluptates cum ab, perferendis nihil fugiat repellendus amet culpa corrupti!
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+            
+                        <div class="text-muted comments">
+                            Voir Tout les 36 commentaires
+                        </div>
+                    </div>
+            
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Jonathan Mbal</h3>
+                                    <small>Lubumbashi, il y a 26min</small>
+                                </div>
+                            </div>
+                            <span class="edit"><img src="./icons/more.svg" alt="edit" class="icons"></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./img/post3.jpg" alt="photo postée">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><img src="./icons/hearth.svg" alt="j'aime" class="icons"></span>
+                                <span><img src="./icons/comment.svg" alt="commenter" class="icons"></span>
+                                <span><img src="./icons/share.svg" alt="partage" class="icons"></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><img src="./icons/favorie.svg" alt="favorie" class="icons"></span>
+                            </div>
+                        </div>
+            
+                        <div class="liked-by">
+                            <span><img src="./img/profile-photo2-medium.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profil-person2-large.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profile-photo3-large.jpg" alt="j'ame" class="icons"></span>
+                            <p>Aimé par <b>Paul</b>, <b>Matabaro</b>, <b>Christelle</b> et 6 autres personnes</p>
+                        </div>
+            
+                        <div class="caption">
+                            <b>Bavon Kalolo </b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, alias illum enim aliquam 
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+            
+                        <div class="text-muted comments">
+                            Voir Tout les 42 commentaires
+                        </div>
+                    </div>
+            
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                                </div>
+                                <div class="ingo">
+                                    <h3>John Shacko</h3>
+                                    <small>Lubumbashi, il y a 40min</small>
+                                </div>
+                            </div>
+                            <span class="edit"><img src="./icons/more.svg" alt="edit" class="icons"></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./img/post4.jpg" alt="photo postée">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><img src="./icons/hearth.svg" alt="j'aime" class="icons"></span>
+                                <span><img src="./icons/comment.svg" alt="commenter" class="icons"></span>
+                                <span><img src="./icons/share.svg" alt="partage" class="icons"></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><img src="./icons/favorie.svg" alt="favorie" class="icons"></span>
+                            </div>
+                        </div>
+            
+                        <div class="liked-by">
+                            <span><img src="./img/profile-photo2-medium.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profil-person2-large.jpg" alt="j'ame" class="icons"></span>
+                            <span><img src="./img/profile-photo3-large.jpg" alt="j'ame" class="icons"></span>
+                            <p>Aimé par <b>Georges</b>, <b>Bavon</b>, <b>Ruth</b> et 366 autres personnes</p>
+                        </div>
+            
+                        <div class="caption">
+                            <b>Bavon Kalolo </b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, alias illum enim aliquam
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+            
+                        <div class="text-muted comments">
+                            Voir Tout les 402 commentaires
+                        </div>
+                    </div>
+                    <!------------END OF FEED------------>
+                </div>
+                <!------------END OF FEEDS------------>
+            
+            </div>
+            <!---------------------------------END OF MIDDLE---------------------------------->
+            
+            <!------------RIGTH------------>
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><span><img src="./icons/agenda.svg" alt="éditer" class="icons"></span>
+                    </div>
+                    
+                    <!------------SEARCH-BAR------------>
+                    <div class="search-bar">
+                        <img src="./icons/search.svg" alt="chercher" class="icons">
+                        <input type="search" placeholder="Chercher un message" id="message-search">
+                    </div>
+
+                    <!------------MESSAGES CATEGORY------------>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="messages-requests">Requests(3)</h6>
+                    </div>
+
+                    <!------------MESSAGES---------->
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Edem Quist</h5>
+                            <p class="text-muted">Just Woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./img/profile-photo3-large.jpg" alt="photo de profil">
+                        </div>
+                        <div class="message-body">
+                            <h5>Réné Loma</h5>
+                            <p class="text-muted">Just Woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./img/profil-person2-large.jpg" alt="photo de profil">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Edem Quist</h5>
+                            <p>Salut, tu étais à esis aujourd'hui ? ervrve ve rvetrvt vevrtt</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./img/profile-photo2-large.jpg" alt="photo de profil">
+                        </div>
+                        <div class="message-body">
+                            <h5>Edem Quist</h5>
+                            <p>2 nouveaux mesages</p>
+                        </div>
+                    </div>
+                    <!------------END OF MESSAGES---------->
+                </div>
+
+                <!------------FRIEND REQUESTS------------>
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./img/profile-photo3-large.jpg" alt="photo de profil">
+                            </div>
+                            <div>
+                                <h5>Kadidja Conde</h5>
+                                <p class="text-muted">6 amis en commun</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <buttton class="btn btn-primary">Accepter</buttton>
+                            <buttton class="btn">Refuser</buttton>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./img/profile-photo2-medium.jpg" alt="photo de profil">
+                            </div>
+                            <div>
+                                <h5>Tshikwetu Muvuma</h5>
+                                <p class="text-muted">6 amis en commun</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <buttton class="btn btn-primary">Accepter</buttton>
+                            <buttton class="btn">Refuser</buttton>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
